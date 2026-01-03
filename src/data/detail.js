@@ -1,0 +1,40 @@
+// src/data/detail.js
+
+export const workDetail = [
+  {
+    title: "골드바 포인트키캡 상세페이지",
+    description: "제품 특징과 포인트 요소를 정리한 제품 상세페이지",
+    type: "detail",
+    category: ["detail"],
+    image: "detail (3).jpg",
+    tags: ["상세페이지", "제품설명", "특징강조", "정보정리"],
+    role: "기획 · 디자인",
+    year: "2025",
+    date: "2025-11-06",
+    order: 1,
+  },
+  {
+    title: "게임기 파우치 추가상품",
+    description: "게임기 보호 포인트를 강조한 추가상품 소개 페이지",
+    type: "detail",
+    category: ["detail"],
+    image: "detail (1).jpg",
+    tags: ["상세페이지", "추가상품", "제품설명", "정보정리"],
+    role: "기획 · 디자인",
+    year: "2025",
+    date: "2025-12-09",
+    order: 1,
+  },
+  {
+    title: "자사몰 제작문의 상세페이지",
+    description: "서비스 안내와 문의 전환을 고려한 자사몰 제작문의 상세페이지",
+    type: "detail",
+    category: ["detail"],
+    image: "detail (2).jpg",
+    tags: ["상세페이지", "자사몰", "제작문의"],
+    role: "기획 · 디자인",
+    year: "2025",
+    date: "2025-12-12",
+    order: 1,
+  },
+];
