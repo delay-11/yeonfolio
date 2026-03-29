@@ -1,0 +1,40 @@
+// src/data/marketing.js
+
+export const workMarketing = [
+  {
+    title: "마케팅 메시지 이미지",
+    description: "네이버 메시지 알림용 프로모션 이미지 디자인",
+    type: "marketing",
+    category: ["marketing"],
+    image: "marketing (1).jpg",
+    tags: ["마케팅", "프로모션", "네이버스토어"],
+    role: "디자인",
+    year: "2025",
+    date: "2025-12-05",
+    order: 1,
+  },
+  {
+    title: "연말 배송 휴무 공지 팝업",
+    description: "연말 배송 휴무 기간을 전달하기 위해 제작한 공지 팝업",
+    type: "marketing",
+    category: ["marketing"],
+    image: "marketing (2).jpg",
+    tags: ["공지팝업", "배송안내", "마케팅"],
+    role: "기획 · 디자인",
+    year: "2025",
+    date: "2025-12-17",
+    order: 1,
+  },
+    {
+    title: "구매 감사 엽서 디자인",
+    description: "구매 고객에게 브랜드 감사 메시지를 전달하기 위해 제작한 엽서 디자인",
+    type: "marketing",
+    category: ["marketing"],
+    image: "marketing (3).jpg",
+    tags: ["마케팅디자인", "브랜딩", "인쇄물디자인", "굿즈"],
+    role: "기획 · 디자인",
+    year: "2025",
+    date: "2026-01-02",
+    order: 1,
+  },
+];
