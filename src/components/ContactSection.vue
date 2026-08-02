@@ -29,12 +29,12 @@
 
             <!-- 연락 버튼 -->
             <div class="footer-buttons mb-8">
-                <v-btn type="button" variant="outlined" class="footer-btn" href="sms:01091574660">
+                <v-btn type="button" variant="outlined" class="footer-btn" href="sms:">
                     <v-icon start size="20">mdi-chat</v-icon>
                     문자 보내기
                 </v-btn>
 
-                <v-btn type="button" variant="outlined" class="footer-btn" href="mailto:wldus4660@naver.com">
+                <v-btn type="button" variant="outlined" class="footer-btn" href="mailto:">
                     <v-icon start size="20">mdi-email</v-icon>
                     이메일 보내기
                 </v-btn>
