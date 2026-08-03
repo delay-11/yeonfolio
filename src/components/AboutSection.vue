@@ -24,7 +24,7 @@
                         <div class="profile-block">
                             <ul class="profile-list">
                                 <li class="profile-item">
-                                    <v-icon color="#6b8e23" size="18" class="mr-2">
+                                    <v-icon color="#6b6a63" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -33,7 +33,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#6b8e23" size="18" class="mr-2">
+                                    <v-icon color="#6b6a63" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -42,7 +42,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#6b8e23" size="18" class="mr-2">
+                                    <v-icon color="#6b6a63" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -51,7 +51,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#6b8e23" size="18" class="mr-2">
+                                    <v-icon color="#6b6a63" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -60,7 +60,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#6b8e23" size="18" class="mr-2">
+                                    <v-icon color="#6b6a63" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -90,7 +90,7 @@ export default {
     font-size: 0.8rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--color-accent);
+    color: var(--color-ink-soft);
 }
 
 .intro-line,
@@ -100,11 +100,11 @@ export default {
 
 /* 이름 강조 */
 .accent-name {
-    color: var(--color-accent-2);
+    color: var(--color-ink);
 }
 
 .profile-accent {
-    color: var(--color-accent-dark);
+    color: var(--color-ink);
 }
 
 /* ============= 기본 레이아웃 ============= */

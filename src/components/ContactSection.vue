@@ -48,7 +48,7 @@
 /* Contact */
 .contact-footer {
     width: 100%;
-    background-color: #4f5d75;
+    background-color: var(--color-accent);
     color: #ffffff;
     text-align: center;
     padding: 60px 0;

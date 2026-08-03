@@ -343,13 +343,13 @@ export default {
 
 .category-pill:hover {
     transform: translateY(-1px);
-    border-color: #4f5d75;
+    border-color: var(--color-ink);
 }
 
 .category-pill--active {
-    background-color: #4f5d75;
+    background-color: var(--color-ink);
     color: #ffffff;
-    border-color: #4f5d75;
+    border-color: var(--color-ink);
 }
 
 /* ================= Masonry 레이아웃 ================= */
@@ -436,15 +436,15 @@ export default {
     padding: 4px 12px !important;
     font-size: 0.78rem !important;
     background-color: white !important;
-    color: #4f5d75 !important;
+    color: var(--color-ink) !important;
     transition: 0.15s ease;
     text-transform: none;
 }
 
 .masonry-btn:hover {
     transform: translateY(-1px);
-    border-color: #4f5d75 !important;
-    background-color: #4f5d75 !important;
+    border-color: var(--color-ink) !important;
+    background-color: var(--color-ink) !important;
     color: white !important;
 }
 </style>

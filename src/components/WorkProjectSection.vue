@@ -243,13 +243,13 @@ export default {
 
 .category-pill:hover {
     transform: translateY(-1px);
-    border-color: #4f5d75;
+    border-color: var(--color-ink);
 }
 
 .category-pill--active {
-    background-color: #4f5d75;
+    background-color: var(--color-ink);
     color: #ffffff;
-    border-color: #4f5d75;
+    border-color: var(--color-ink);
 }
 
 /* ================= 배너 그룹 헤더 ================= */
