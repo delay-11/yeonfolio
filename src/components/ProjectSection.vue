@@ -26,7 +26,7 @@
                     <v-spacer></v-spacer>
 
                     <div class="d-flex justify-end">
-                        <v-btn color="#6b8e23" variant="flat" rounded="pill">
+                        <v-btn color="#2f5de3" variant="flat" rounded="pill">
                             개인 프로젝트 보러가기
                         </v-btn>
                     </div>
@@ -52,7 +52,7 @@
                     <v-spacer></v-spacer>
 
                     <div class="d-flex justify-end">
-                        <v-btn color="#6b8e23" variant="flat" rounded="pill">
+                        <v-btn color="#2f5de3" variant="flat" rounded="pill">
                             회사 프로젝트 보러가기
                         </v-btn>
                     </div>
