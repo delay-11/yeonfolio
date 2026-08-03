@@ -5,60 +5,27 @@
             Projects
         </h2>
 
-        <v-row dense>
-            <!-- Personal Projects 카드 -->
-            <v-col cols="12" md="6">
-                <v-card class="pa-6 h-100 d-flex flex-column skill-group-card" elevation="2" hover @click="goPersonal">
-                    <div class="text-subtitle-1 font-weight-bold mb-2">
-                        Personal Projects
-                    </div>
-                    <div class="text-body-2 mb-4">
-                        UI 디자인, 영상, 웹 개발 등
-                        직접 진행한 다양한 개인 작업 모음
-                    </div>
+        <v-card class="pa-6 skill-group-card" elevation="2" hover @click="goPersonal">
+            <div class="text-subtitle-1 font-weight-bold mb-2">
+                Personal Projects
+            </div>
+            <div class="text-body-2 mb-4">
+                UI 디자인, 영상, 웹 개발 등
+                직접 진행한 다양한 개인 작업 모음
+            </div>
 
-                    <div class="mb-4">
-                        <v-chip size="small" class="mr-2 mb-2" variant="outlined">
-                            Design · Video · Web
-                        </v-chip>
-                    </div>
+            <div class="mb-4">
+                <v-chip size="small" class="mr-2 mb-2" variant="outlined">
+                    Design · Video · Web
+                </v-chip>
+            </div>
 
-                    <v-spacer></v-spacer>
-
-                    <div class="d-flex justify-end">
-                        <v-btn color="#4b4fe0" variant="flat" rounded="pill">
-                            개인 프로젝트 보러가기
-                        </v-btn>
-                    </div>
-                </v-card>
-            </v-col>
-
-            <!-- Work Projects -->
-            <v-col cols="12" md="6">
-                <v-card class="pa-6 h-100 d-flex flex-column skill-group-card" elevation="2" hover @click="goWork">
-                    <div class="text-subtitle-1 font-weight-bold mb-2">
-                        Work Projects
-                    </div>
-                    <div class="text-body-2 mb-4">
-                        브랜드 제품 디자인과 촬영·보정을 포함한 실무 작업 모음
-                    </div>
-
-                    <div class="mb-4">
-                        <v-chip size="small" class="mr-2 mb-2" variant="outlined">
-                            Branding · Product · E-Commerce · Photography
-                        </v-chip>
-                    </div>
-
-                    <v-spacer></v-spacer>
-
-                    <div class="d-flex justify-end">
-                        <v-btn color="#4b4fe0" variant="flat" rounded="pill">
-                            회사 프로젝트 보러가기
-                        </v-btn>
-                    </div>
-                </v-card>
-            </v-col>
-        </v-row>
+            <div class="d-flex justify-end">
+                <v-btn color="#4b4fe0" variant="flat" rounded="pill">
+                    개인 프로젝트 보러가기
+                </v-btn>
+            </div>
+        </v-card>
     </section>
 </template>
 
@@ -66,15 +33,9 @@
 <script setup>
 import { useRouter } from "vue-router";
 
-const props = defineProps({
-    personalCount: Number,
-    workCount: Number,
-});
-
 const router = useRouter();
 
 const goPersonal = () => router.push("/personal");
-const goWork = () => router.push("/work");
 </script>
 
 

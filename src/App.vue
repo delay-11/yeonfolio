@@ -70,7 +70,7 @@ export default {
       selectedTab:
         path === '/'
           ? 'about'
-          : path === '/personal' || path === '/work'
+          : path === '/personal'
             ? 'projects'
             : null,
 
@@ -83,10 +83,9 @@ export default {
   },
 
   computed: {
-    // 개인/회사 프로젝트 상세 페이지 여부
+    // 개인 프로젝트 상세 페이지 여부
     isProjectPage() {
-      const path = this.$route.path;
-      return path === '/personal' || path === '/work';
+      return this.$route.path === '/personal';
     },
   },
 
@@ -249,9 +248,7 @@ export default {
       }
 
       // 🔹 홈이 아닐 때
-      if (newPath === '/personal' || newPath === '/work') {
-        // 수정 이유: 개인/회사 프로젝트 페이지에서는 상단 "프로젝트" 탭이
-        //           계속 활성화된 상태로 보이도록 하기 위함
+      if (newPath === '/personal') {
         this.selectedTab = 'projects';
         this.showTopBtn = true;
       } else {
