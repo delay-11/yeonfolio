@@ -1,6 +1,6 @@
 <template>
     <section class="about-section mb-10">
-        <h2 class="text-h4 font-weight-bold mb-6">👩🏻‍💻 About Me</h2>
+        <h2 class="about-eyebrow mb-6">About Me</h2>
 
         <v-container>
             <v-row class="about-wrapper" align="center">
@@ -24,7 +24,7 @@
                         <div class="profile-block">
                             <ul class="profile-list">
                                 <li class="profile-item">
-                                    <v-icon color="#2C3E50" size="18" class="mr-2">
+                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -33,7 +33,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#2C3E50" size="18" class="mr-2">
+                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -42,7 +42,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#2C3E50" size="18" class="mr-2">
+                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -51,7 +51,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#2C3E50" size="18" class="mr-2">
+                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -60,7 +60,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#2C3E50" size="18" class="mr-2">
+                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -85,8 +85,12 @@ export default {
 
 <style scoped>
 /* ============= 타이틀, 폰트 ============= */
-.about-section h2 {
+.about-eyebrow {
     font-family: "SUITE-Bold", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-accent);
 }
 
 .intro-line,
@@ -96,11 +100,11 @@ export default {
 
 /* 이름 강조 */
 .accent-name {
-    color: #E29500;
+    color: var(--color-accent-2);
 }
 
 .profile-accent {
-    color: #4F5D75;
+    color: var(--color-accent-dark);
 }
 
 /* ============= 기본 레이아웃 ============= */
@@ -132,12 +136,14 @@ export default {
     margin: 0 auto;
 }
 
-/* 소개 한 줄 문장 */
+/* 소개 한 줄 문장 - 히어로 헤드라인 */
 .intro-line {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #2c3e50;
-    margin-bottom: 16px;
+    font-family: "SUITE-Bold", sans-serif;
+    font-size: 1.9rem;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    color: var(--color-ink);
+    margin-bottom: 24px;
     text-align: left;
 }
 
@@ -184,8 +190,8 @@ export default {
     }
 
     .intro-line {
-        font-size: 0.85rem;
-        margin-bottom: 14px;
+        font-size: 1.3rem;
+        margin-bottom: 18px;
         text-align: left;
     }
 

@@ -18,8 +18,29 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'SUITE-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// ================= 디자인 토큰 =================
+:root {
+    --color-bg: #ffffff;
+    --color-surface: #f7f6f2;
+    --color-ink: #1c1b17;
+    --color-ink-soft: #6b6a63;
+    --color-accent: #6b7a3f;
+    --color-accent-dark: #4f5c2d;
+    --color-accent-2: #e8b93f;
+    --color-border: rgba(28, 27, 23, 0.08);
+}
+
 html {
     font-family: 'SUITE-Regular', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-ink);
 }
 
 .v-application {

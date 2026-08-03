@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- 상단 AppBar -->
-    <v-app-bar app color="#4F5D75" dark dense flat>
+    <v-app-bar app color="white" dense flat class="site-appbar">
       <!-- 로고: 클릭 시 항상 맨 위로 -->
       <v-toolbar-title class="pl-5 pr-0 d-none d-md-flex" @click="scrollToTop" style="cursor: pointer; margin: 0;">
         <v-img src="/image/yeon.png" alt="YEON 로고" contain height="50" width="auto" class="ma-0" />
@@ -9,7 +9,7 @@
 
       <!-- 상단 탭 메뉴 -->
       <div class="tab-wrapper-center">
-        <v-tabs v-model="selectedTab" background-color="transparent" align-tabs="center" slider-color="white"
+        <v-tabs v-model="selectedTab" background-color="transparent" align-tabs="center" slider-color="#6b7a3f"
           class="tab-bar-center">
           <v-tab class="nav-tab" :class="{ 'active-tab': selectedTab === 'about' }" value="about"
             @click="navigateAndScroll('about')">
@@ -50,12 +50,12 @@
     <div class="floating-nav-buttons" v-show="showTopBtn">
       <!-- 뒤로가기: 홈(/)이 아닐 때만 표시 -->
       <v-btn v-if="$route.path !== '/'" class="floating-btn" elevation="3" icon @click="goBack">
-        <v-icon color="white">mdi-chevron-left</v-icon>
+        <v-icon color="#ffffff">mdi-chevron-left</v-icon>
       </v-btn>
 
       <!-- TOP 버튼 -->
       <v-btn class="floating-btn" elevation="3" icon @click="scrollToTop">
-        <v-icon color="white">mdi-chevron-up</v-icon>
+        <v-icon color="#ffffff">mdi-chevron-up</v-icon>
       </v-btn>
     </div>
   </v-app>
@@ -292,31 +292,33 @@ export default {
   min-width: max-content;
 }
 
+/* AppBar 하단 보더 */
+.site-appbar {
+  border-bottom: 1px solid var(--color-border);
+}
+
 /* 탭 메뉴 기본 스타일 */
 .nav-tab {
   font-family: 'SUITE-Bold', sans-serif;
   font-weight: 700;
   letter-spacing: -0.3px;
-  opacity: 0.7;
-  border-radius: 999px;
+  color: var(--color-ink-soft);
+  opacity: 1;
+  border-radius: 0;
   padding: 4px 14px;
-  transition:
-    background-color 0.25s ease,
-    box-shadow 0.25s ease,
-    opacity 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 /* 활성 탭 */
 .active-tab {
-  opacity: 1;
-  background-color: #ffffff29;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-  border-radius: 999px;
+  color: var(--color-accent);
+  background-color: transparent;
+  box-shadow: none;
 }
 
 /* 탭 슬라이더 두껍게 */
 :deep(.v-tabs-slider) {
-  height: 4px;
+  height: 3px;
   border-radius: 999px;
 }
 
@@ -334,21 +336,22 @@ export default {
 /* 플로팅 버튼 스타일 */
 .floating-btn {
   backdrop-filter: blur(6px);
-  background-color: #4f5d7599;
+  background-color: rgba(28, 27, 23, 0.75) !important;
   transition: background-color 0.3s ease;
 }
 
 .floating-btn:hover {
-  background-color: #4f5d75e6;
+  background-color: rgba(28, 27, 23, 0.92) !important;
 }
 
 /* 푸터 */
 .contact-footer {
   width: 100%;
-  background-color: #4f5d75;
-  color: #ffffff;
+  background-color: var(--color-bg);
+  color: var(--color-ink-soft);
   text-align: center;
-  padding: 60px 0;
+  padding: 40px 0;
+  border-top: 1px solid var(--color-border);
 }
 
 .footer-copy {
