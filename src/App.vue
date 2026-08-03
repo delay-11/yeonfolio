@@ -9,7 +9,7 @@
 
       <!-- 상단 탭 메뉴 -->
       <div class="tab-wrapper-center">
-        <v-tabs v-model="selectedTab" background-color="transparent" align-tabs="center" slider-color="#2f5de3"
+        <v-tabs v-model="selectedTab" background-color="transparent" align-tabs="center" slider-color="#4b4fe0"
           class="tab-bar-center">
           <v-tab class="nav-tab" :class="{ 'active-tab': selectedTab === 'about' }" value="about"
             @click="navigateAndScroll('about')">
