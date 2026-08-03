@@ -24,7 +24,7 @@
                         <div class="profile-block">
                             <ul class="profile-list">
                                 <li class="profile-item">
-                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
+                                    <v-icon color="#6b8e23" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -33,7 +33,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
+                                    <v-icon color="#6b8e23" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -42,7 +42,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
+                                    <v-icon color="#6b8e23" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -51,7 +51,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
+                                    <v-icon color="#6b8e23" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
@@ -60,7 +60,7 @@
                                 </li>
 
                                 <li class="profile-item">
-                                    <v-icon color="#6b7a3f" size="18" class="mr-2">
+                                    <v-icon color="#6b8e23" size="18" class="mr-2">
                                         mdi-checkbox-marked-circle-outline
                                     </v-icon>
                                     <span>
